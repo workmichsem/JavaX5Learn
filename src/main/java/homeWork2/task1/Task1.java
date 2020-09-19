@@ -4,38 +4,34 @@ import java.util.Scanner;
 
 public class Task1 {
     private static String inputNumber = null;
-    private static int outputNumber;
 
-
-    public static void inputValueFromScreen(){
-        System.out.println("Введите целое число в диапазоне от -2147483648 до 2147483647");
+    public static void inputValueFromScreen() {
+        System.out.println("Введите целое число в диапазоне от " + Integer.MIN_VALUE + " до " + Integer.MAX_VALUE);
         Scanner scanner = new Scanner(System.in);
         inputNumber = scanner.nextLine();
     }
 
-    public static boolean typeChek(){
+    public static int parseValue() {
+        int parseToIntNumber = 0;
         try {
-            Integer.parseInt(inputNumber);
-            return true;
+            parseToIntNumber = Integer.parseInt(inputNumber);
+            return parseToIntNumber;
         } catch (NumberFormatException e) {
-            return false;
-        }
-    }
-
-    public static void calculateLastNumber(){
-        if(typeChek()){
-            outputNumber = Integer.parseInt(inputNumber)%10;
-            outputNumber = Math.abs(outputNumber);
-        }
-        else{
             System.out.println("Введенное значение не является числом или значение вне диапазона. Программа будет прервана.");
             System.exit(0);
+            return parseToIntNumber;
         }
     }
 
-    public static void outputOnScreen(){
-        System.out.println("Последняя цифра в введенном числе: " + outputNumber);
+    public static int calculateLastNumber() {
+        int outputNumber = 0;
+        outputNumber = parseValue() % 10;
+        outputNumber = Math.abs(outputNumber);
+        return outputNumber;
+    }
 
+    public static void outputOnScreen() {
+        System.out.println("Последняя цифра в введенном числе: " + calculateLastNumber());
     }
 }
 
