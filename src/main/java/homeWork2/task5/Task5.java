@@ -6,21 +6,29 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Task5 {
-    private static String[] inputNumber = new String[3];
 
-    public static void inputValueFromScreen() {
+    public static int[] inputValueFromScreen() {
+        int inputNumber;
+        int[] inputArr = {0};
         System.out.println("Введите целое число в диапазоне от " + Integer.MIN_VALUE + " до " + Integer.MAX_VALUE);
         Scanner scanner = new Scanner(System.in);
         for (int i = 0; i < 3; i++) {
-            inputNumber[i] = scanner.nextLine();
+            try {
+                inputNumber = scanner.nextInt();
+                inputArr[i] = inputNumber;
+            } catch (NumberFormatException e) {
+                System.out.println("Введенное значение не соответствует условиям. Программа будет прервана.");
+                System.exit(0);
+                return inputArr;
+            }
         }
+        return inputArr;
     }
 
     public static int[] сhekValue() {
-        int[] parseNumber = new int[3];
+        int[] parseNumber = inputValueFromScreen();
         try {
-            for (int i = 0; i < inputNumber.length; i++) {
-                parseNumber[i] = Integer.parseInt(inputNumber[i]);
+            for (int i = 0; i < parseNumber.length; i++) {
                 if (parseNumber[i] > Integer.MAX_VALUE || parseNumber[i] < Integer.MIN_VALUE) {
                     System.out.println("Введенное значение не соответствует условиям. Программа будет прервана.");
                     System.exit(0);

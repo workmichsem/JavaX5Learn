@@ -8,5 +8,6 @@ public class MainTask8 {
         Task8.sumEvenNegativeElements(arr);
         Task8.countPositiveElements(arr);
         Task8.maxAverageNegativeElements(arr);
+        Task8.arithmeticMeanInteger(arr);
     }
 }
