@@ -47,6 +47,11 @@ public class Animal {
         this.isEat = isEat;
     }
 
+    public Animal(String food, String location) {
+        this.food = food;
+        this.location = location;
+    }
+
     public String getFood() {
         return food;
     }

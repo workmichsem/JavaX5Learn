@@ -17,9 +17,14 @@ public class Cat extends Animal {
         }
     }
 
-    public Cat(){
+    public Cat() {
         this.isMeow = false;
         this.food = "Рыба";
         this.location = "Казань";
+    }
+
+    public Cat(String food, String location) {
+        this.food = food;
+        this.location = location;
     }
 }

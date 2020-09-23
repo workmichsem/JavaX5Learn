@@ -17,9 +17,14 @@ public class Horse extends Animal {
         }
     }
 
-    public Horse(){
+    public Horse() {
         this.islaugh = false;
         this.food = "Сено";
         this.location = "Самара";
+    }
+
+    public Horse(String food, String location) {
+        this.food = food;
+        this.location = location;
     }
 }
