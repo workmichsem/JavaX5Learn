@@ -10,7 +10,7 @@ public class Task6 {
         Scanner scanner = new Scanner(System.in);
         try {
             inputNumber = scanner.nextInt();
-        } catch (NumberFormatException e) {
+        } catch (Exception e) {
             System.out.println("Введенное значение не соответствует условиям. Программа будет прервана.");
             System.exit(0);
         }
