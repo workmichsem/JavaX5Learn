@@ -1,22 +1,27 @@
 package homeWork5.task2;
 
+import java.util.Scanner;
+
 public class MainTask2 {
     public static void main(String[] args) {
+        Computer computer = new Computer();
+        computer.outputComputerInfo();
 
+        OutputStrategy outputStrategy = null;
+        System.out.println("Выберите тип вывода");
+        Scanner scanner = new Scanner(System.in);
+        String line = scanner.nextLine();
+        switch (OutputType.valueOf(line)){
+            case ALL:
+                outputStrategy = new OutputAll();
+                break;
+            case MEMORY:
+                outputStrategy = new OutputMemory();
+                break;
+            case PROCESSORS:
+                outputStrategy = new OutputProcessors();
+                break;
+        }
+        outputStrategy.output();
     }
 }
-//    Спроектировать класс компьютер с характеристиками: класс
-//        процессор, оперативная память, видеокарта, накопитель, монитор.
-//        Характеристики процессора: тактовая чистота, кол
-//        -во ядер, кеш
-//        память, название, производитель. Характеристики оперативной
-//        памяти: производитель, объем памяти, частота, тип памяти.
-//        Характеристики видеокарты: производитель, тип памяти, объем
-//        памяти, охлаждение(активное или пассивное). Характеристики
-//        накопителя: производитель, объем памяти, тип накопителя(HDD или
-//        SSD), форм
-//        -фактор.
-//        * Для усложнения можно создать несколько классов наследников
-//        для процессора, оперативной памяти, видеокарты, накопителя.
-//        Создания экземпляров классов характеристик использовать
-//        фабричный метод и стратегию.
