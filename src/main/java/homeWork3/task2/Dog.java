@@ -1,9 +1,7 @@
 package homeWork3.task2;
 
 public class Dog extends Animal {
-    private boolean isYelp;
-    private String food;
-    private String location;
+    public boolean isYelp;
 
     @Override
     public void eat() {

@@ -1,11 +1,11 @@
 package homeWork3.task2;
 
 public class Animal {
-    private String food;
-    private String location;
-    private boolean isSleep;
-    private boolean isNoise;
-    private boolean isEat;
+    protected String food;
+    protected String location;
+    protected boolean isSleep;
+    protected boolean isNoise;
+    protected boolean isEat;
 
     public void makeNoise() {
         if (isNoise && !isSleep) {

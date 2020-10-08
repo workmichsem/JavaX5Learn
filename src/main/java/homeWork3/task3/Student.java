@@ -1,9 +1,9 @@
 package homeWork3.task3;
 
 public class Student {
-    protected String firstName;
-    protected String lastName;
-    protected double averageMark;
+    public String firstName;
+    public String lastName;
+    public double averageMark;
 
     public int getScholarship() {
         if (averageMark == 5.0) {
@@ -19,9 +19,9 @@ public class Student {
         this.averageMark = 5.0;
     }
 
-    public Student(double averageMark) {
-        this.firstName = "default_firstName";
-        this.lastName = "default_lastName";
+    public Student(String firstName, String lastName, double averageMark) {
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.averageMark = averageMark;
     }
 }

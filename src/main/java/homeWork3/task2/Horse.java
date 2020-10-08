@@ -1,9 +1,7 @@
 package homeWork3.task2;
 
 public class Horse extends Animal {
-    private boolean islaugh;
-    private String food;
-    private String location;
+    public boolean islaugh;
 
     @Override
     public void eat() {

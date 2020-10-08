@@ -19,9 +19,7 @@ public class Aspirant extends Student {
         this.isHaveScientificWork = true;
     }
 
-    public Aspirant(double averageMark) {
-        this.firstName = "default_firstName";
-        this.lastName = "default_lastName";
-        this.averageMark = averageMark;
+    public Aspirant(String firstName, String lastName, double averageMark) {
+        super(firstName, lastName, averageMark);
     }
 }

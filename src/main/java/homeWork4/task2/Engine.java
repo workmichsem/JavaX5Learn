@@ -1,8 +1,8 @@
 package homeWork4.task2;
 
 public class Engine {
-    protected int power;
-    protected String manufacturer;
+    public int power;
+    public String manufacturer;
 
     public Engine() {
         this.power = 100;
