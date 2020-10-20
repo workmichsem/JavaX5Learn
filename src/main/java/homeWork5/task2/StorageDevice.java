@@ -22,4 +22,19 @@ public class StorageDevice implements ComputerElement {
         this.storageType = "default storageType";
         this.forms = "default forms";
     }
+
+    public StorageDevice(String param) {
+        if (param == "QR34") {
+            this.manufacturer = "Kingston";
+            this.memorySize = "1024";
+            this.storageType = "ROM";
+            this.forms = "3.5'";
+        }
+        if (param == "334GR") {
+            this.manufacturer = "QUMO";
+            this.memorySize = "2048";
+            this.storageType = "ROM";
+            this.forms = "2.5'";
+        }
+    }
 }

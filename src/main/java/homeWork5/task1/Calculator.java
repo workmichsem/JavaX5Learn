@@ -4,15 +4,9 @@ import homeWork5.task1.loggers.*;
 
 public class Calculator {
 
-    public static Logger[] startsLoggers() {
-        LogFactory[] logFactories = {new ConsoleLoggerFactory(), new DbLoggerFactory(), new FileLoggerFactory()};
-        Logger[] loggers = {logFactories[0].createLogger(), logFactories[1].createLogger(), logFactories[2].createLogger()};
-        return loggers;
-    }
-
-    public static double multiplication(double a, double b) {
+    public static double multiplication(double a, double b, Logger[] logger) {
         double output = 0.0;
-        Logger[] loggers = startsLoggers();
+        Logger[] loggers = logger;
         loggers[0].log("Начата операция умножения");
         loggers[1].log("Начата операция умножения");
         loggers[2].log("Начата операция умножения");
@@ -23,9 +17,9 @@ public class Calculator {
         return output;
     }
 
-    public static double division(double a, double b) {
+    public static double division(double a, double b, Logger[] logger) {
         double output = 0.0;
-        Logger[] loggers = startsLoggers();
+        Logger[] loggers = logger;
         loggers[0].log("Начата операция деления");
         loggers[1].log("Начата операция деления");
         loggers[2].log("Начата операция деления");
@@ -36,9 +30,9 @@ public class Calculator {
         return output;
     }
 
-    public static double addition(double a, double b) {
+    public static double addition(double a, double b, Logger[] logger) {
         double output = 0.0;
-        Logger[] loggers = startsLoggers();
+        Logger[] loggers = logger;
         loggers[0].log("Начата операция сложения");
         loggers[1].log("Начата операция сложения");
         loggers[2].log("Начата операция сложения");
@@ -49,9 +43,9 @@ public class Calculator {
         return output;
     }
 
-    public static double subtraction(double a, double b) {
+    public static double subtraction(double a, double b, Logger[] logger) {
         double output = 0.0;
-        Logger[] loggers = startsLoggers();
+        Logger[] loggers = logger;
         loggers[0].log("Начата операция вычитания");
         loggers[1].log("Начата операция вычитания");
         loggers[2].log("Начата операция вычитания");

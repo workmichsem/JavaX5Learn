@@ -22,4 +22,19 @@ public class Monitor implements ComputerElement {
         this.matrixType = "default matrixType";
         this.manufacturer = "default manufacturer";
     }
+
+    public Monitor(String param) {
+        if (param == "3360Q") {
+            this.diagonal = "22";
+            this.resolution = "FullHD";
+            this.matrixType = "IPS";
+            this.manufacturer = "BQ";
+        }
+        if (param == "R210") {
+            this.diagonal = "24";
+            this.resolution = "2K";
+            this.matrixType = "IPS";
+            this.manufacturer = "Dell";
+        }
+    }
 }

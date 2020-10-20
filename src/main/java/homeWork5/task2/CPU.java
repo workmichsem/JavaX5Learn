@@ -28,4 +28,23 @@ public class CPU implements ComputerElement {
         this.name = "default name";
         this.manufacturer = "default manufacturer";
     }
+
+    public CPU(String param) {
+        if (param == "i5-5300U") {
+            this.clockFrequency = "2";
+            this.numberOfCores = "4";
+            this.cache = "6";
+            this.memory = "32";
+            this.name = param;
+            this.manufacturer = "Intel";
+        }
+        if (param == "i7-9900K") {
+            this.clockFrequency = "2";
+            this.numberOfCores = "8";
+            this.cache = "12";
+            this.memory = "128";
+            this.name = param;
+            this.manufacturer = "Intel";
+        }
+    }
 }

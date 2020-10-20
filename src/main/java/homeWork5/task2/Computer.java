@@ -1,22 +1,31 @@
 package homeWork5.task2;
 
 public class Computer {
+
     ComputerElementFactory cPUElementFactory = new CPUFactory();
-    ComputerElement cPUObj = cPUElementFactory.createComputerElement();
+    ComputerElement cPUObj;
     ComputerElementFactory graphicsCardElementFactory = new GraphicsCardFactory();
-    ComputerElement graphicsCardObj = graphicsCardElementFactory.createComputerElement();
+    ComputerElement graphicsCardObj;
     ComputerElementFactory monitorElementFactory = new MonitorFactory();
-    ComputerElement monitorObj = monitorElementFactory.createComputerElement();
+    ComputerElement monitorObj;
     ComputerElementFactory rAMElementFactory = new RAMFactory();
-    ComputerElement rAMObj = rAMElementFactory.createComputerElement();
+    ComputerElement rAMObj;
     ComputerElementFactory storageDeviceElementFactory = new StorageDeviceFactory();
-    ComputerElement storageDevice = storageDeviceElementFactory.createComputerElement();
+    ComputerElement storageDeviceObj;
 
     public void outputComputerInfo() {
         cPUObj.getInfo();
         graphicsCardObj.getInfo();
         monitorObj.getInfo();
         rAMObj.getInfo();
-        storageDevice.getInfo();
+        storageDeviceObj.getInfo();
+    }
+
+    public Computer(String cPU, String graphicsCard, String monitor, String ram, String storageDevice) {
+        cPUObj = cPUElementFactory.createComputerElement(cPU);
+        graphicsCardObj = graphicsCardElementFactory.createComputerElement(graphicsCard);
+        monitorObj = monitorElementFactory.createComputerElement(monitor);
+        rAMObj = rAMElementFactory.createComputerElement(ram);
+        storageDeviceObj = storageDeviceElementFactory.createComputerElement(storageDevice);
     }
 }

@@ -22,4 +22,19 @@ public class GraphicsCard implements ComputerElement {
         this.sizeMemory = "default sizeMemory";
         this.cooling = "default cooling";
     }
+
+    public GraphicsCard(String param) {
+        if (param=="930M"){
+            this.manufacturer = "NVidia";
+            this.memoryType = "RAM";
+            this.sizeMemory = "2";
+            this.cooling = "fan";
+        }
+        if (param=="RX350"){
+            this.manufacturer = "Radeon";
+            this.memoryType = "RAM";
+            this.sizeMemory = "4";
+            this.cooling = "water";
+        }
+    }
 }

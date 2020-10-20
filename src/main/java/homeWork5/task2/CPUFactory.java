@@ -2,7 +2,7 @@ package homeWork5.task2;
 
 public class CPUFactory extends ComputerElementFactory {
     @Override
-    public ComputerElement createComputerElement() {
-        return new CPU();
+    public ComputerElement createComputerElement(String param) {
+        return new CPU(param);
     }
 }
