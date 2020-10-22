@@ -28,9 +28,14 @@ public class Account {
     public void setAmount(double amount) {
         this.amount = amount;
     }
-}
 
-//    Информация о счете
-//        должна хранится в файловой системе. Доступ к файловому
-//        хранилищу осуществлять с помощью символьных потоков
-//        ввода/вывода
+    public Account(){
+
+    }
+
+    public Account(int id, String holder, double amount){
+        this.id = id;
+        this.holder = holder;
+        this.amount = amount;
+    }
+}
