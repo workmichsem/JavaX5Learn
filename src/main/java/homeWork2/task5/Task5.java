@@ -1,6 +1,6 @@
 package homeWork2.task5;
 
-import com.sun.org.apache.bcel.internal.generic.ARRAYLENGTH;
+
 
 import java.util.Arrays;
 import java.util.Scanner;

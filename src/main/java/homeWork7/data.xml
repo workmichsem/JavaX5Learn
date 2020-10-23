@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<accounts>
+    <accounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="account">
+        <id>101</id>
+        <holder>holder-1</holder>
+        <amount>10000.0</amount>
+    </accounts>
+    <accounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="account">
+        <id>103</id>
+        <holder>holder-3</holder>
+        <amount>10000.0</amount>
+    </accounts>
+    <accounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="account">
+        <id>104</id>
+        <holder>holder-4</holder>
+        <amount>10000.0</amount>
+    </accounts>
+    <accounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="account">
+        <id>106</id>
+        <holder>holder-6</holder>
+        <amount>10000.0</amount>
+    </accounts>
+    <accounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="account">
+        <id>107</id>
+        <holder>holder-7</holder>
+        <amount>10000.0</amount>
+    </accounts>
+    <accounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="account">
+        <id>108</id>
+        <holder>holder-8</holder>
+        <amount>10000.0</amount>
+    </accounts>
+    <accounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="account">
+        <id>109</id>
+        <holder>holder-9</holder>
+        <amount>10000.0</amount>
+    </accounts>
+    <accounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="account">
+        <id>110</id>
+        <holder>holder-10</holder>
+        <amount>10000.0</amount>
+    </accounts>
+    <accounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="account">
+        <id>102</id>
+        <holder>holder-2</holder>
+        <amount>9050.0</amount>
+    </accounts>
+    <accounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="account">
+        <id>105</id>
+        <holder>holder-5</holder>
+        <amount>11000.0</amount>
+    </accounts>
+</accounts>
