@@ -43,11 +43,11 @@
     <accounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="account">
         <id>102</id>
         <holder>holder-2</holder>
-        <amount>9050.0</amount>
+        <amount>8100.0</amount>
     </accounts>
     <accounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="account">
         <id>105</id>
         <holder>holder-5</holder>
-        <amount>11000.0</amount>
+        <amount>12000.0</amount>
     </accounts>
 </accounts>
