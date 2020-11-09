@@ -17,7 +17,7 @@ public class SampleLinkedList<T> {
         data.get(index);
     }
 
-    public void remove() {
+    public void removeLastElement() {
         data.removeLast();
     }
 

@@ -43,5 +43,5 @@ public class Task2 {
 
     public static void outputOnScreen() {
         System.out.println("Сумма цифр в введенном числе: " + calculateSum());
-    }
+}
 }
