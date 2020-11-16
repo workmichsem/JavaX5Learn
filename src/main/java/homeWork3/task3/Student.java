@@ -1,9 +1,9 @@
 package homeWork3.task3;
 
 public class Student {
-    public String firstName;
-    public String lastName;
-    public double averageMark;
+    protected String firstName;
+    protected String lastName;
+    protected double averageMark;
 
     public int getScholarship() {
         if (averageMark == 5.0) {
