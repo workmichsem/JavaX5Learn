@@ -2,10 +2,10 @@ package homework6.task2;
 
 public class MainTask2 {
     public static void main(String[] args) {
-        Apple apple1 = new Apple("Белое");
-        Apple apple2 = new Apple("Красное");
-        Orange orange1 = new Orange("Турецкий");
-        Orange orange2 = new Orange("Абхазский");
+        Apple apple1 = new Apple(1.0);
+        Apple apple2 = new Apple(1.0);
+        Orange orange1 = new Orange(1.5);
+        Orange orange2 = new Orange(1.5);
 
         Box<Apple> boxApple = new Box<Apple>();
         boxApple.add(apple1);
@@ -19,10 +19,22 @@ public class MainTask2 {
 
         Box.compare(boxApple,boxOrange);
     }
+    public static double getBoxWeight(Box box) {
+        box.getWeight();
+//        if (box instanceof Apple) {
+//            System.out.println(data.length * appleCost);
+//            return data.length * appleCost;
+//        } else if (data[0] instanceof Orange) {
+//            System.out.println(data.length * orangeCost);
+//            return data.length * orangeCost;
+//        }
+        return 0;
+    }
 }
 
-//        Задание 2: Здесь можно было не писать свою реализацию List, а
-//        воспользоваться готовой, но это некритично. double appleCost = 1.0; -
-//        не должно храниться в коробке. Коробка о весе фруктов знать не должна.
+
+//        double appleCost = 1.0; -
+//        не должно храниться в коробке.
+//        Коробка о весе фруктов знать не должна.
 //        Соответственно коробка так же не должна data[0] instanceof Apple опередлять
-//        тип фруктов, которые в ней. Почему у Fruit есть name?
+//        тип фруктов, которые в ней.

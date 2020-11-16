@@ -1,7 +1,7 @@
 package homeWork3.task2;
 
 public class Cat extends Animal {
-    public boolean isMeow;
+    private boolean isMeow;
 
     @Override
     public void eat() {

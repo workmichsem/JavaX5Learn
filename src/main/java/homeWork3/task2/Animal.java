@@ -3,9 +3,9 @@ package homeWork3.task2;
 public class Animal {
     protected String food;
     protected String location;
-    protected boolean isSleep;
-    protected boolean isNoise;
-    protected boolean isEat;
+    private boolean isSleep;
+    private boolean isNoise;
+    private boolean isEat;
 
     public void makeNoise() {
         if (isNoise && !isSleep) {
